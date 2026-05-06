@@ -76,17 +76,8 @@ public class SanPham {
         return slTon;
     }
 
-    public void setSlTon(Integer slTon) {
-        this.slTon = slTon;
-    }
 
-    public Integer getTrangThai() {
-        return trangThai;
-    }
 
-    public void setTrangThai(Integer trangThai) {
-        this.trangThai = trangThai;
-    }
 
     public LocalDateTime getCreatedAt() {
         return createdAt;
@@ -119,6 +110,18 @@ public class SanPham {
     @Column(name = "SoLuongTon")
     private Integer slTon;
 
+    public Integer getTrangThai() {
+        return trangThai;
+    }
+
+    public void setTrangThai(Integer trangThai) {
+        this.trangThai = trangThai;
+    }
+
+    public void setSlTon(Integer slTon) {
+        this.slTon = slTon;
+    }
+
     @Column(name = "TrangThai")
     private Integer trangThai;
 
@@ -130,6 +133,7 @@ public class SanPham {
     @Column(name = "UpdatedAt")
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
 
 
 }

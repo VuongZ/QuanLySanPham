@@ -27,7 +27,8 @@ public class SanPhamService {
         sp.setDonVi(sanPham.getDonVi());
         sp.setGiaBan(sanPham.getGiaBan());
         sp.setSlTon(sanPham.getSlTon());
-        sp.setCreatedAt(sanPham.getCreatedAt());    
+        sp.setTrangThai(sanPham.getTrangThai());
+        sp.setCreatedAt(sanPham.getCreatedAt());
         sp.setUpdatedAt(sanPham.getUpdatedAt());
         return sanPhamRepository.save(sp);
     }
