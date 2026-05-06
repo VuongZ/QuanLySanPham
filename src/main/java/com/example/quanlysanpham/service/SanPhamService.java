@@ -21,8 +21,15 @@ public class SanPhamService {
         return sanPhamRepository.save(sanPham);
     }
     public SanPham update(Integer id, SanPham sanPham) {
-        sanPham = sanPhamRepository.getById(Long.valueOf(id));
-        return sanPhamRepository.save(sanPham);
+        SanPham sp=sanPhamRepository.getById((long) id);
+        sp.setMaSanPham(sanPham.getMaSanPham());
+        sp.setTenSanPham(sanPham.getTenSanPham());
+        sp.setDonVi(sanPham.getDonVi());
+        sp.setGiaBan(sanPham.getGiaBan());
+        sp.setSlTon(sanPham.getSlTon());
+        sp.setCreatedAt(sanPham.getCreatedAt());    
+        sp.setUpdatedAt(sanPham.getUpdatedAt());
+        return sanPhamRepository.save(sp);
     }
     public void delete(Integer id) { sanPhamRepository.deleteById(Long.valueOf(id)); }
 }

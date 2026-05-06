@@ -11,7 +11,7 @@ import java.util.List;
 public class LoaiSanPhamSerVice {
     @Autowired
     private LoaiSanPhamRepository loaiSanPhamRepository;
-    public List<LoaiSanPham> GetALL(int id) {return loaiSanPhamRepository.findAll();}
+    public List<LoaiSanPham> GetALL() {return loaiSanPhamRepository.findAll();}
     public LoaiSanPham GetById(int id) {return loaiSanPhamRepository.findById((long) id)
             .orElseThrow(()-> new RuntimeException("Khong Co Loai San Pham"));}
     public LoaiSanPham create(LoaiSanPham loaiSanPham) {

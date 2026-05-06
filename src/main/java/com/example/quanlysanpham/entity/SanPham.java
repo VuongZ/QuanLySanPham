@@ -24,6 +24,86 @@ public class SanPham {
     @Column(name = "LoaiSanPham_Id")
     private Integer loaiSanPham;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Integer getLoaiSanPham() {
+        return loaiSanPham;
+    }
+
+    public void setLoaiSanPham(Integer loaiSanPham) {
+        this.loaiSanPham = loaiSanPham;
+    }
+
+    public String getMaSanPham() {
+        return maSanPham;
+    }
+
+    public void setMaSanPham(String maSanPham) {
+        this.maSanPham = maSanPham;
+    }
+
+    public String getTenSanPham() {
+        return tenSanPham;
+    }
+
+    public void setTenSanPham(String tenSanPham) {
+        this.tenSanPham = tenSanPham;
+    }
+
+    public String getDonVi() {
+        return donVi;
+    }
+
+    public void setDonVi(String donVi) {
+        this.donVi = donVi;
+    }
+
+    public Double getGiaBan() {
+        return giaBan;
+    }
+
+    public void setGiaBan(Double giaBan) {
+        this.giaBan = giaBan;
+    }
+
+    public Integer getSlTon() {
+        return slTon;
+    }
+
+    public void setSlTon(Integer slTon) {
+        this.slTon = slTon;
+    }
+
+    public Integer getTrangThai() {
+        return trangThai;
+    }
+
+    public void setTrangThai(Integer trangThai) {
+        this.trangThai = trangThai;
+    }
+
+    public LocalDateTime getCreatedAt() {
+        return createdAt;
+    }
+
+    public void setCreatedAt(LocalDateTime createdAt) {
+        this.createdAt = createdAt;
+    }
+
+    public LocalDateTime getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public void setUpdatedAt(LocalDateTime updatedAt) {
+        this.updatedAt = updatedAt;
+    }
+
     @Column(name = "MaSP")
     private String maSanPham;
 
@@ -50,4 +130,6 @@ public class SanPham {
     @Column(name = "UpdatedAt")
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+
 }
