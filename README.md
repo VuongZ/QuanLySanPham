@@ -7,6 +7,12 @@ Ngôn ngữ: Java (JDK 17)
 Framework: Spring Boot, Spring Data JPA, Hibernate
 Công cụ hỗ trợ: Lombok
 Hệ quản trị: MySQL 8.0+
+Môi trường Frontend:
+
+Thư viện cốt lõi: React.js (Sử dụng Vite để đóng gói)
+Quản lý định tuyến: React Router DOM
+Giao tiếp API: Axios
+Giao diện (UI/UX): Bootstrap 5
 II. HƯỚNG DẪN CÀI ĐẶT VÀ VẬN HÀNH
 Để khởi chạy dự án trên môi trường máy chủ cục bộ (localhost), thực hiện tuần tự các bước dưới đây:
 
@@ -24,6 +30,12 @@ Thay đổi thông tin username và password tại mục datasource để khớp
 Chờ tải hoàn tất các thư viện phụ thuộc (Dependencies).
 
 Thực thi lớp chính: Version1Application.java.
+Buoc 3: Cài đặt và khởi chạy Frontend (React.js)
+Sử dụng phần mềm Visual Studio Code để mở thư mục chứa mã nguồn Frontend (crm-frontend).
+Mở Terminal tích hợp trong VS Code.
+Thực thi lệnh sau để cài đặt các thư viện Node.js cần thiết: npm install
+Sau khi cài đặt hoàn tất, khởi chạy máy chủ Frontend bằng lệnh: npm run dev
+Truy cập vào đường dẫn hiển thị trên Terminal (mặc định là http://localhost:5173) thông qua trình duyệt web để bắt đầu sử dụng hệ thống.
 
 Backend khởi chạy thành công khi cửa sổ Console thông báo ứng dụng đang hoạt động tại cổng 8081.
 III.CÁC PHÂN HỆ NGHIỆP VỤ CHÍNH
